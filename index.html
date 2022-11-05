@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TMT</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/iconsFont.css">
+</head>
+
+<body>
+   <!-- *header -->
+   <header class="header">
+      <div class="header__wrapper-top">
+         <div class="header__content-top top-header">
+            <div class="top-header__flex-column">
+               <img src="img/icons/logo.jpg" alt="" class="top-header__logo">
+               <div class="top-header__logo-title">
+                  <div>Тахтамукайское</div>
+                  <div>муниципальное</div>
+                  <div>телевидение</div>
+               </div>
+               <img src="img/icons/flag.png" alt="" class="top-header__flag">
+            </div>
+            <nav class="top-header__nav-links">
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/telegram.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/ok.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/vk.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/youtube.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/rss.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/rss-1.svg" alt="">
+               </a>
+               <a href="" class="top-header__nav-link">
+                  <img src="img/social_icons/rss-2.svg" alt="">
+               </a>
+            </nav>
+            <a href="" class="top-header__button">
+               <img class="top-header__button-icon" src="img/icons/eye.svg" alt="">
+               <div class="top-header__button-text">Версия для слабовидящих</div>
+            </a>
+         </div>
+      </div>
+      <div class="header__wrapper-bottom">
+         <div class="header__content-bottom bottom-header">
+            <nav class="bottom-header__nav nav-header">
+               <ul class="nav-header__list">
+                  <li class="nav-header__item"><a href="#" class="nav-header__burger-button"
+                        onclick="showSideMenu()"></a>
+                  </li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">ГЛАВНАЯ</a></li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">РУБРИКИ</a></li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">ТВ КОМПАНИЯ</a></li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">ДОКУМЕНТЫ</a></li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">ТМТ</a></li>
+                  <li class="nav-header__item"><a href="#
+                     " class="nav-header__link">КОНТАКТЫ</a></li>
+               </ul>
+               <ul class="nav-header__burger-list" id="menu-burger" onclick="hideSideMenu()">
+                  <li class="nav-header__item"><a href="#" class="nav-header__burger-close">&times;</a></li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">ГЛАВНАЯ</a></li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">РУБРИКИ</a></li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">ТВ КОМПАНИЯ</a>
+                  </li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">ДОКУМЕНТЫ</a></li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">ТМТ</a>
+                  </li>
+                  <li class="nav-header__burger-item"><a href="#
+                     " class="nav-header__burger-link">КОНТАКТЫ</a>
+                  </li>
+               </ul>
+            </nav>
+            <form action="#submit" class="bottom-header__search-block">
+               <input type="text" placeholder="Что желаете найти?" class="bottom-header__search-field">
+               <button class="bottom-header__search-button"><img src="img/icons/search.svg" alt=""> искать</button>
+            </form>
+            <form action="#" class="bottom-header__search-mini">
+               <button class="bottom-header__mini-button">
+                  <img src="img/icons/search.svg" alt="" class="bottom-header__mini-icon">
+               </button>
+            </form>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <!-- *banner -->
+      <section class="banner">
+         <a href="">
+            <div class="banner__wrapper">
+            </div>
+         </a>
+      </section>
+      <!-- *release -->
+      <section class="release">
+         <div class="release__wrapper">
+            <div class="release__content content-release">
+               <div class="content-release__tabs tabs-release">
+                  <div class="tabs-release__container">
+                     <div class="tabs-release__title">Последний выпуск</div>
+                     <nav class="tabs-release__tabs-list">
+                        <button data-tab="#tab_1" type="button" class="tabs-release__tab _active">YOUTUBE</button>
+                        <button data-tab="#tab_2" type="button" class="tabs-release__tab">ruTUBE</button>
+                     </nav>
+                  </div>
+                  <div class="tabs-release__tab-body">
+                     <div id="tab_1" class="tabs-release__tab-content _active">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sniu7IGcOYc"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
+                     </div>
+                     <div id="tab_2" class="tabs-release__tab-content">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gUCeMUsTtDI"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-release__column column-release">
+                  <div class="column-release__images">
+                     <a href="">
+                        <img src="img/release_banners/banner-1.png" alt="banner-1" class="column-release__image">
+                     </a>
+                     <a href="">
+                        <img src="img/release_banners/banner-2.png" alt="covid-19" class="column-release__image">
+                     </a>
+                     <a href="">
+                        <img src="img/release_banners/banner-3.png" alt="banner-3" class="column-release__image">
+                     </a>
+                  </div>
+                  <div class="content-release__interview interview-release">
+                     <div class="interview-release__title">Как вам наш новый сайт?</div>
+                     <div class="interview-release__column">
+                        <nav class="interview-release__nav">
+                           <form action="#" method="get">
+                              <div>
+                                 <input class="interview-release__nav-input" tabindex="1" type="radio" name="evaluation"
+                                    value="good" id="good">
+                                 <label class="interview-release__item-nav" for="good">Хороший</label>
+                              </div>
+                              <div>
+                                 <input class="interview-release__nav-input" tabindex="1" type="radio" name="evaluation"
+                                    value="bad" id="bad">
+                                 <label class="interview-release__item-nav" for="bad">Плохой</label>
+                              </div>
+                              <div>
+                                 <input class="interview-release__nav-input" tabindex="1" type="radio" name="evaluation"
+                                    value="could be better" id="better">
+                                 <label class="interview-release__item-nav" for="better">Мог быть
+                                    лучше</label>
+                              </div>
+                           </form>
+                        </nav>
+                        <button type="button" class="interview-release__button">голосовать</button>
+                     </div>
+                     <div class="interview-release__result">
+                        <a href="#">посмотреть результаты</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- *headings -->
+      <section class="headings">
+         <div class="headings__wrapper">
+            <div class="headings__content content-headings">
+               <div class="content-headings__column">
+                  <div class="content-headings__title">Рубрики</div>
+                  <a href="#" class="content-headings__more">Все рубрики</a>
+               </div>
+               <div class="content-headings__column">
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/cross.png" alt="">здоровье</button>
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/masks.png" alt="">культура</button>
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/book.png" alt="">образование</button>
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/earth.png" alt="">общество</button>
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/ball.png" alt="">спорт</button>
+                  <button class="content-headings__button"><img class="content-headlings__button-image"
+                        src="img/button_icons/money.png" alt="">экономика</button>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- *last-news -->
+      <section class="news">
+         <div class="news__wrapper">
+            <div class="news__content content-news">
+               <div class="content-news__column">
+                  <div class="content-news__title">Лента новостей</div>
+                  <a href="#" class="content-news__more">Все выпуски</a>
+               </div>
+               <div class="content-news__blocks">
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/sport.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">1 Ноября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 26.10.2022</div>
+                        </a>
+                     </div>
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/culture.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Культура</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">О добровольческом движении РА «Волонтеры культуры»</div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/health.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Здоровье</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 24.10.2022</div>
+                        </a>
+                     </div>
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/culture-2.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Культура</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 21.10.2022</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-news__swiper swiper-news swiper">
+                  <div class="swiper-news__wrapper swiper-wrapper">
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/sport.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">1 Ноября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 26.10.2022</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/culture.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Культура</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">О добровольческом движении РА «Волонтеры культуры»</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/health.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Здоровье</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 24.10.2022</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/culture-2.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Культура</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Новости ТМТ от 21.10.2022</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- *News Cur -->
+      <section class="news">
+         <div class="news__wrapper">
+            <div class="news__content content-news">
+               <div class="content-news__column">
+                  <div class="content-news__title">Новости ЦУР</div>
+                  <a href="#" class="content-news__more">Все выпуски</a>
+               </div>
+               <div class="content-news__blocks">
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/sport-2.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">В преддверии Дня народного единства в Совете Федерации
+                              наградят детей-героев России</div>
+                        </a>
+                     </div>
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/society.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Общество</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Поддержим наших ребят на передовой!</div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/sport-3.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">В конкурсе «Лидеры возрождения» в Херсонской области
+                              примет участие фермер из Адыгеи</div>
+                        </a>
+                     </div>
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/news_preview/economy.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Экономика</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Заур Шеуджен расскажет в прямом эфире ЦУР Адыгеи о
+                              программе догазификации</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-news__swiper swiper-cur swiper">
+                  <div class="swiper-news__wrapper swiper-wrapper">
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/sport-2.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">В преддверии Дня народного единства в Совете Федерации
+                              наградят детей-героев России</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/society.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Общество</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Поддержим наших ребят на передовой!</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/sport-3.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Спорт</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">В конкурсе «Лидеры возрождения» в Херсонской области
+                              примет участие фермер из Адыгеи</div>
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/news_preview/economy.png" class="content-news__preview">
+                           <div>
+                              <span class="content-news__news-title">Экономика</span>
+                              <span class="content-news__date">28 Октября 2022</span>
+                           </div>
+                           <div class="content-news__subtitle">Заур Шеуджен расскажет в прямом эфире ЦУР Адыгеи о
+                              программе догазификации</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- *TV projects -->
+      <section class="news">
+         <div class="news__wrapper">
+            <div class="news__content content-news">
+               <div class="content-news__column">
+                  <div class="content-news__title">Телепроекты</div>
+                  <a href="#" class="content-news__more">Все выпуски</a>
+               </div>
+               <div class="content-news__blocks">
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/TV_projects/poject-1.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/TV_projects/projcet-2.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="content-news__blocks-column">
+                     <div class="content-news__block">
+                        <a href="#">
+                           <img src="img/TV_projects/project-3.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-news__swiper swiper-news swiper">
+                  <div class="swiper-news__wrapper swiper-wrapper">
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/TV_projects/poject-1.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/TV_projects/projcet-2.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                     <div class="swiper-news__slide swiper-slide">
+                        <a href="#">
+                           <img src="img/TV_projects/project-3.png" class="content-news__tv-preview">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </section>
+   </main>
+   <!-- *footer -->
+   <footer class="footer">
+      <!-- footer-top -->
+      <div class="footer__top-wrapper">
+         <div class="footer__top-content top-footer">
+            <div class="top-footer__block _file-check">
+               Официальный сайт Тахтамукайского муниципального телевидения (ТМТ). Свидетельство о регистрации СМИЭл.
+               №
+               ФС77-72571 выдано Федеральной службойпо надзору в сфере связи, информационных технологий и массовых
+               коммуникаций (Роскомнадзор) 04.04.2018 г.
+            </div>
+            <div class="top-footer__block _shield">
+               Для сайтов и страниц сети Интернет обязательна активная гиперссылкана официальный сайт Тахтамукайского
+               муниципального телевидения
+            </div>
+            <div class="top-footer__block _shield">
+               При перепечатке и использовании информации ссылка на источник обязательна
+            </div>
+         </div>
+      </div>
+      <!-- footer-bottom -->
+      <div class="footer__bottom-wrapper">
+         <div class="footer__bottom-content bottom-footer">
+            <div class="bottom-footer__block">
+               <div class="bottom-footer__block-title">Учредитель</div>
+               <div class="bottom-footer__block-content">Муниципальное бюджетное учреждение
+                  «Тахтамукайское муниципальное телевидение» (ТМТ)</div>
+            </div>
+            <div class="bottom-footer__block">
+               <div class="bottom-footer__block-title">Наименование сетевого издания</div>
+               <div class="bottom-footer__block-content">«Тахтамукайское муниципальноетелевидение» (ТМТ)</div>
+            </div>
+            <div class="bottom-footer__block">
+               <div class="bottom-footer__block-title">Главный редактор</div>
+               <div class="bottom-footer__block-content">Кубова Фатима Азмедчериевна</div>
+            </div>
+            <div class="bottom-footer__block">
+               <div class="bottom-footer__block-name">Обработка персональных данных</div>
+            </div>
+            <div class="bottom-footer__block">
+               <div class="bottom-footer__block-name">Политика конфиденциальности</div>
+            </div>
+            <div class="bottom-footer__block">
+               <img src="img/icons/12+.png" alt="" class="bottom-footer__icon">
+               <img src="img/icons/footer-icon.png" alt="" class="bottom-footer__icon">
+               <img src="img/icons/mail.png" alt="" class="bottom-footer__icon">
+            </div>
+         </div>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script>
+      function showSideMenu() {
+         document.getElementById('menu-burger').style.width = '50vw';
+      }
+      function hideSideMenu() {
+         document.getElementById('menu-burger').style.width = '0';
+      }
+   </script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
