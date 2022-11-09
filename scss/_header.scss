@@ -1,0 +1,258 @@
+.header {
+   &__wrapper-top {
+      background-color: white;
+      padding: 11px 14px;
+   }
+
+   &__wrapper-bottom {
+      background-color: #119769;
+      padding: 10px 14px;
+   }
+
+   &__content-top {
+      display: grid;
+      grid-template-columns: repeat(3, fit-content(400px));
+      justify-content: space-between;
+   }
+}
+
+@media (max-width: 843px) {
+   .top-header {
+      &__flag {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 730px) {
+   .header {
+      &__content-top {
+         grid-template-columns: fit-content(400px) 48px;
+         grid-template-rows: repeat(2, fit-content(200px));
+         grid-template-areas:
+            "logo button"
+            "links links";
+         row-gap: 10px;
+      }
+   }
+
+   .top-header {
+      &__flex-column {
+         grid-area: logo;
+      }
+
+      &__nav-links {
+         grid-area: links;
+         justify-self: center;
+         border-top: 1px solid #e3f3ed;
+         width: 100%;
+         text-align: center;
+         padding-top: 10px;
+      }
+      &__button {
+         grid-area: button;
+      }
+   }
+}
+
+@media (max-width: 400px) {
+   .top-header {
+      &__logo-title {
+         margin: 0 20px 0 9px;
+      }
+
+      &__nav-link img {
+         width: 34px;
+      }
+   }
+}
+
+.top-header {
+   max-width: 1180px;
+   margin: 0 auto;
+   &__flex-column {
+      display: flex;
+   }
+
+   &__logo-title {
+      margin: 0 30px 0 14px;
+      font-family: Merriweather;
+      font-size: calc(13px + 2 * (100vw / 1180));
+      font-weight: 700;
+      line-height: 130%;
+      letter-spacing: 0em;
+      text-align: left;
+   }
+
+   &__flag,
+   &__logo {
+      pointer-events: none;
+   }
+
+   &__nav-links {
+      align-self: center;
+   }
+
+   &__nav-link {
+      margin: 3.5px;
+   }
+
+   &__button {
+      font-size: calc(13px + 2 * (100vw / 1180));
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      background: #313131;
+      color: white;
+      padding: 9px 16px;
+      text-transform: uppercase;
+      border-radius: 3px;
+      align-self: center;
+      display: flex;
+      transition: all 0.3s;
+   }
+
+   &__button:hover {
+      transform: scale(1.05);
+   }
+
+   &__button-icon {
+      width: 32px;
+      align-self: center;
+      margin-right: 11px;
+   }
+
+   &__button-text {
+      align-self: center;
+   }
+}
+
+@media (max-width: 1064px) {
+   .top-header {
+      &__button {
+         padding: 8px;
+      }
+
+      &__button-text {
+         display: none;
+      }
+
+      &__button-icon {
+         margin: 0;
+      }
+   }
+}
+
+.bottom-header {
+   max-width: 1180px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+
+   &__links {
+      align-self: center;
+   }
+
+   &__link:hover {
+      border-bottom: 2px solid white;
+   }
+
+   &__search-block {
+      width: 495px;
+      background: #137461;
+      padding: 7px 15px;
+      border-radius: 3px;
+      display: flex;
+      display: none;
+      position: relative;
+   }
+
+   &__search-field {
+      flex: 1 1 auto;
+      background: none;
+      font-size: calc(13px + 2 * (100vw / 1180));
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+   }
+
+   input::-moz-placeholder {
+      color: red;
+   }
+   input::-webkit-input-placeholder {
+      color: white;
+      opacity: 0.4;
+   }
+
+   &__search-button {
+      background: none;
+      color: white;
+      font-size: calc(13px + 2 * (100vw / 1180));
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: right;
+      text-transform: uppercase;
+      position: absolute;
+      right: 12px;
+   }
+
+   &__search-button img {
+      height: 22px;
+   }
+
+   &__search-mini {
+      align-self: center;
+   }
+
+   &__mini-button {
+      background: linear-gradient(270deg, #119769 86.07%, rgba(17, 151, 105, 0) 100%);
+   }
+
+   &__mini-icon {
+      height: 26px;
+      align-items: center;
+   }
+}
+
+.nav-header {
+   align-self: center;
+   &__list {
+      display: flex;
+   }
+
+   &__link,
+   &__burger-link {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: white;
+      text-transform: uppercase;
+      margin-right: 32px;
+      white-space: nowrap;
+      transition: all 0.3s;
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+   }
+
+   &__link:hover {
+      border-bottom: 3px solid white;
+   }
+}
+
+@media (min-width: 973px) {
+   .bottom-header {
+      &__search-block {
+         display: block;
+      }
+
+      &__search-mini {
+         display: none;
+      }
+   }
+}
